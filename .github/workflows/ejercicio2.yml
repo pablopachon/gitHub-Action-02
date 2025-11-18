@@ -2,8 +2,7 @@ name: Test PHP en múltiples SO y versiones
 
 on:
 
-  schedule:
-    - cron: "*/2 * * * *"
+  workflow_dispatch:
     
 jobs:
   test:
