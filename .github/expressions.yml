@@ -1,0 +1,8 @@
+name: expresions
+on: ubuntu-latest
+jobs:
+  test-expressions:
+    runs-on: ubuntu-latest
+    steps:
+    # se evalua antes de enviar al servidor
+      - run: echo ${{ github.actor }}
