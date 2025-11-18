@@ -1,0 +1,14 @@
+name: Mostrar fecha
+on:
+  push:
+    branches-ignore:
+      - main
+  schedule:
+    - cron: "*/2 * * * *"
+
+jobs:
+  print-date:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Imprimir fecha actual
+        run: echo "la fecha es date"
